@@ -6,73 +6,76 @@
 
 /* =========================
    Theme variables
-   Default = dark
+   Default = dark (Deep Blue Slate)
 ========================= */
 :root {
   /* page */
-  --page-bg: #050810;
-  --page-grad-1: rgba(79, 209, 196, 0.16);
-  --page-grad-2: rgba(99, 102, 241, 0.10);
-  --page-grad-3: rgba(236, 72, 153, 0.06);
-  --page-grad-4: rgba(79, 209, 196, 0.05);
-  --page-grad-5: rgba(126, 220, 211, 0.08);
+  --page-bg: #003366; /* Deep Blue Slate */
+  --page-grad-1: rgba(79, 209, 221, 0.20); /* Bright Aqua wash */
+  --page-grad-2: rgba(19, 46, 58, 0.70);   /* Night Teal depth */
+  --page-grad-3: rgba(24, 56, 69, 0.55);   /* Soft Dark overlay */
+  --page-grad-4: rgba(44, 177, 188, 0.32); /* Vibrant Teal accents */
+  --page-grad-5: rgba(0, 51, 102, 0.85);   /* Deep Blue anchor */
 
   /* surfaces */
-  --surface-1: rgba(9, 13, 24, 0.78);
-  --surface-2: rgba(255, 255, 255, 0.055);
-  --surface-3: rgba(255, 255, 255, 0.075);
+  --surface-1: #132e3a;   /* Secondary Background (Night Teal) */
+  --surface-2: #183845;   /* Card Background (Soft Dark) */
+  --surface-3: #1f4656;   /* Hover / elevated cards */
 
-  --border-1: rgba(255, 255, 255, 0.10);
-  --border-2: rgba(255, 255, 255, 0.14);
+  --border-1: rgba(243, 248, 251, 0.18);
+  --border-2: rgba(243, 248, 251, 0.28);
 
-  --text: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.64);
+  --text: #f3f8fb;        /* Soft White */
+  --muted: #b7c8d2;       /* Cool Gray */
 
-  --primary: #4fd1c4;
-  --primary-soft: rgba(79, 209, 196, 0.18);
+  --primary: #4fd1dd;     /* Bright Aqua */
+  --primary-soft: rgba(79, 209, 221, 0.20);
 
   /* card feel */
   --radius: 16px; /* reduced vs bubble look */
-  --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
 
   /* waves */
-  --wave-a: rgba(79, 209, 196, 0.22);
-  --wave-b: rgba(99, 102, 241, 0.10);
-  --wave-c: rgba(236, 72, 153, 0.08);
-  --wave-d: rgba(34, 197, 94, 0.10);
-  --wave-e: rgba(59, 130, 246, 0.08);
-  --wave-f: rgba(168, 85, 247, 0.10);
-  --wave-g: rgba(245, 158, 11, 0.06);
+  --wave-a: rgba(79, 209, 221, 0.24);
+  --wave-b: rgba(19, 46, 58, 0.70);
+  --wave-c: rgba(24, 56, 69, 0.60);
+  --wave-d: rgba(44, 177, 188, 0.30);
+  --wave-e: rgba(0, 51, 102, 0.80);
+  --wave-f: rgba(55, 148, 177, 0.40);
+  --wave-g: rgba(183, 200, 210, 0.20);
 }
 
-/* Light theme overrides */
+/* Light theme overrides (Fresh Sky Blue) */
 html[data-theme="light"] {
-  --page-bg: #f6f8fb;
-  --page-grad-1: rgba(79, 209, 196, 0.16);
-  --page-grad-2: rgba(59, 130, 246, 0.10);
-  --page-grad-3: rgba(99, 102, 241, 0.08);
-  --page-grad-4: rgba(245, 158, 11, 0.06);
-  --page-grad-5: rgba(236, 72, 153, 0.06);
+  --page-bg: #a3cef2; /* Fresh Sky Blue */
+  --page-grad-1: rgba(163, 206, 242, 0.90);
+  --page-grad-2: rgba(190, 235, 255, 0.85); /* Cloud White blocks */
+  --page-grad-3: rgba(230, 242, 248, 0.90); /* Soft Blue Tint */
+  --page-grad-4: rgba(56, 182, 193, 0.24);  /* Brand Teal accent */
+  --page-grad-5: rgba(43, 152, 162, 0.20);  /* Deep Teal hover */
 
-  --surface-1: rgba(255, 255, 255, 0.85);
-  --surface-2: rgba(255, 255, 255, 0.92);
-  --surface-3: rgba(255, 255, 255, 0.98);
+  --surface-1: #beebff;  /* Section cards */
+  --surface-2: #e6f2f8;  /* Default card background */
+  --surface-3: #ffffff;  /* Elevated / hover card */
 
-  --border-1: rgba(10, 15, 24, 0.12);
-  --border-2: rgba(10, 15, 24, 0.16);
+  --border-1: rgba(17, 24, 39, 0.10);
+  --border-2: rgba(17, 24, 39, 0.18);
 
-  --text: rgba(10, 15, 24, 0.92);
-  --muted: rgba(10, 15, 24, 0.62);
+  --text: #111827;                    /* Deep Charcoal */
+  --muted: rgba(17, 24, 39, 0.72);    /* Softer charcoal */
 
-  --shadow: 0 18px 48px rgba(10, 15, 24, 0.10);
+  --primary: #38b6c1;                 /* Brand Teal */
+  --primary-soft: rgba(56, 182, 193, 0.16);
 
-  --wave-a: rgba(79, 209, 196, 0.18);
-  --wave-b: rgba(59, 130, 246, 0.08);
-  --wave-c: rgba(99, 102, 241, 0.06);
-  --wave-d: rgba(34, 197, 94, 0.08);
-  --wave-e: rgba(59, 130, 246, 0.06);
-  --wave-f: rgba(168, 85, 247, 0.07);
-  --wave-g: rgba(245, 158, 11, 0.05);
+  --shadow: 0 18px 48px rgba(15, 23, 42, 0.18);
+
+  --wave-a: rgba(163, 206, 242, 0.95);
+  --wave-b: rgba(190, 235, 255, 0.90);
+  --wave-c: rgba(230, 242, 248, 0.95);
+  --wave-d: rgba(56, 182, 193, 0.30);
+  --wave-e: rgba(43, 152, 162, 0.20);
+  --wave-f: rgba(0, 51, 102, 0.12);
+  --wave-g: rgba(17, 24, 39, 0.06);
 }
 
 /* =========================

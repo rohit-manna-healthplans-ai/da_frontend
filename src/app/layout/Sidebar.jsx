@@ -33,6 +33,7 @@ export function SidebarContent({ onNavigate }) {
   // Logs / Screenshots / Insights are available only inside Users -> User Detail tabs.
   const navItems = [
     { label: "Overview", to: "/dashboard/overview", icon: <DashboardRoundedIcon /> },
+    { label: "Claims", to: "/dashboard/claims", icon: <DashboardRoundedIcon /> },
     ...(canSeeUsers ? [{ label: "Users", to: "/dashboard/users", icon: <PeopleAltRoundedIcon /> }] : []),
     { label: "Settings", to: "/dashboard/settings", icon: <SettingsRoundedIcon /> },
   ];

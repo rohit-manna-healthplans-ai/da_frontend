@@ -26,20 +26,22 @@ function buildTheme(mode) {
   return createTheme({
     palette: {
       mode,
-      primary: { main: "#4FD1C4" },
-      secondary: { main: "#7EDCD3" },
+      // Palette aligned with the provided brand sheets
+      primary: { main: dark ? "#4FD1DD" : "#38B6C1" },
+      secondary: { main: dark ? "#2CB1BC" : "#2B98A2" },
       success: { main: "#22c55e" },
       warning: { main: "#f59e0b" },
       error: { main: "#ff6b6b" },
       background: {
-        default: dark ? "#050810" : "#F6F8FB",
-        paper: dark ? "rgba(255,255,255,0.055)" : "rgba(255,255,255,0.92)",
+        // Primary/secondary backgrounds
+        default: dark ? "#003366" : "#A3CEF2",
+        paper: dark ? "#183845" : "#BEEBFF",
       },
       text: {
-        primary: dark ? "rgba(255,255,255,0.92)" : "rgba(10,15,24,0.92)",
-        secondary: dark ? "rgba(255,255,255,0.64)" : "rgba(10,15,24,0.62)",
+        primary: dark ? "#F3F8FB" : "#111827",
+        secondary: dark ? "#B7C8D2" : "rgba(17,24,39,0.72)",
       },
-      divider: dark ? "rgba(255,255,255,0.10)" : "rgba(10,15,24,0.12)",
+      divider: dark ? "rgba(247,250,252,0.10)" : "rgba(15,23,42,0.12)",
     },
     // Less bubble-like rounding
     shape: { borderRadius: 16 },

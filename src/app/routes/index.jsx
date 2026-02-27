@@ -14,6 +14,7 @@ import Users from "../../pages/dashboard/Users.jsx";
 import UserDetail from "../../pages/dashboard/UserDetail.jsx";
 import Insights from "../../pages/dashboard/Insights.jsx";
 import Settings from "../../pages/dashboard/Settings.jsx";
+import Claims from "../../pages/dashboard/Claims.jsx";
 import Profile from "../../pages/dashboard/Profile.jsx";
 
 
@@ -51,6 +52,8 @@ export default function AppRoutes() {
       <Route path="/dashboard" element={<Navigate to="/dashboard/overview" replace />} />
 
       <Route path="/dashboard/overview" element={<DashboardShell><Overview /></DashboardShell>} />
+
+      <Route path="/dashboard/claims" element={<DashboardShell><Claims /></DashboardShell>} />
 
       <Route
         path="/dashboard/insights"
